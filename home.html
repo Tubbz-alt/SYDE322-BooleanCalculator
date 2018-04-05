@@ -1,0 +1,28 @@
+<!DOCTYPE html> 
+<html> 
+   <header>   
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" /> 
+        <script  src="https://unpkg.com/axios/dist/axios.min.js" type="text/javascript"> </script>
+        <script src = "./client.js" type="text/javascript"></script>  
+
+	</header>   
+	<body style="text-align:center">   
+
+		<h1 id="test">Boolean Simplification</h1>  
+		<p>
+			<p>Input your math expression here: </p>
+            <p>Expressions allowed: X, Y, Z, A, B, C, 1, 0, +, *, ~, (, )</p>
+			<input type = "text" style="width: 270px;height: 30px; font-size: 20px" id="expression" value = "" />
+			<button type="button" style="height: 30px; font-size: 20px; color: green" onclick="postResult()" />Simplify</button>
+			<p>Simplified Expression: </p>
+			<input type = "text" style="width: 400px;height: 30px; font-size: 20px" id="simplifiedExpression" value = "" />
+            <p>
+                <input type = "text" style="width: 300px;height: 30px; font-size: 20px" id="postfix" value = "" />
+                <button type="button" style="height: 30px; font-size: 20px; color: blue" onclick="postPostfix()" />Show postfix</button>
+            </p>
+            <div id="premiumMessage" style="visibility: hidden">
+                <label style="color: red">You need to be a premium user to use this feature.</label>
+            </div>
+		</p>
+	</body>  
+</html> 
